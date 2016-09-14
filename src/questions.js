@@ -24,18 +24,21 @@ var removeNullAndFalseElements = function(array) {
   return array.filter(removingNulls);
 }
 
-// var reverseWordsInArray = function(array) {
-//   return 'Write your method here';
-// }
-//
+var reverseWordsInArray = function(array) {
+  function wordReverser(word) {
+    return word.split("").reverse().join("");
+  }
+  return array.map(wordReverser);
+}
+
 // var everyPossiblePair = function(array) {
 //   return 'Write your method here';
 // }
-//
-// var allElementsExceptFirstThree = function(array) {
-//   return 'Write your method here';
-// }
-//
+
+var allElementsExceptFirstThree = function(array) {
+  return array.splice(3);
+}
+
 // var addElementToBeginning = function(array, element) {
 //   return 'Write your method here';
 // }
